@@ -1,0 +1,9 @@
+#.gitignore 파일에 특정 파일이나 폴더의 경로들을 적어두면, 해당 파일들은 github 연동 시 무시된다.
+
+# 예시를 들어본다
+
+# 1. 파일 - file.java 
+# 2. 폴더 - logs/ : logs라는 폴더의 하위 파일
+
+bin/
+HowToDecorateREADME
