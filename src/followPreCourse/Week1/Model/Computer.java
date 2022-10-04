@@ -10,12 +10,12 @@ package followPreCourse.Week1.Model;
 public class Computer {
 	private int numberOfComputer;
 	public Computer() {
-		while(!isNumberSuitable(this.numberOfComputer)) {
+		while(!isNumberValid()) {
 			this.numberOfComputer = (int) (Math.random() * 899) + 101;
 		}
 	}
 	
-	private boolean isNumberSuitable(int computerNumber) {
+	private boolean isNumberValid() {
 		int hundred = this.numberOfComputer / 100;
 		int ten = (this.numberOfComputer / 10) % 10;
 		int one = this.numberOfComputer % 10;
@@ -24,3 +24,7 @@ public class Computer {
 //		return !(hundred == ten || hundred == one || ten == one); // 한눈에 들어오는 코드가 더 중요할까
 	}
 }
+
+// 1. 메서드 이름 변경 isNumberSuitable() -> isNumberValid
+// 2. 메서드 매개변수 삭제 isNumberValid(this.numberOfComputer)
+// 3. Computer 클래스의 생성자 
